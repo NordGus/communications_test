@@ -1,0 +1,1 @@
+json.communications @communications, :id, :creator_id, :receiver_id, :subject, :contents, :previous_communication_id, :attachment_count
