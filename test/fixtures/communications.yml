@@ -1,0 +1,20 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  creator: director
+  receiver: minor
+  subject: MyString
+  contents: MyText
+
+two:
+  creator: director
+  receiver: adult
+  subject: MyString
+  contents: MyText
+
+three:
+  creator: director
+  receiver: adult
+  subject: MyString
+  contents: MyText
+  previous_communication: two

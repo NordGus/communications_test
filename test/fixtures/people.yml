@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+director:
+  name: Lana Wachowski
+  birthdate: <%= 40.years.ago %>
+
+minor:
+  name: John Wick
+  birthdate: <%= 10.years.ago %>
+
+adult:
+  name: Thomas Anderson
+  birthdate: <%= 40.years.ago %>
