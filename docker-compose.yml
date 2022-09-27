@@ -1,0 +1,26 @@
+version: "3.9"
+services:
+  dev:
+    build: .
+    image: communications-app
+    command: tail -f /dev/null
+    volumes:
+      - .:/var/app
+    ports:
+      - "3000:3000"
+    environment:
+      MYSQL_USERNAME: root
+      MYSQL_PASSWORD: localdev
+      MYSQL_HOST: db
+    depends_on:
+      - db
+
+  db:
+    image: mysql:5.7
+    volumes:
+      - communications-db:/var/lib/postgresql/data
+    environment:
+      MYSQL_ROOT_PASSWORD: localdev
+
+volumes:
+  communications-db:
